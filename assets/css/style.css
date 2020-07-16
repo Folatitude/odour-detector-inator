@@ -1,10 +1,27 @@
+html, body{
+  overflow-x: hidden;
+}
+
 *{
   padding: 0;
   margin: 0;
+ 
 }
 .nav-hero{
-  background-color: #263238;
+  background-image: url('../img/header.png');
+  background-position: 70% 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  position: relative;
   
+}
+.ellipse-4{
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  width: 3rem;
 }
 
 .family-1{
@@ -13,32 +30,199 @@
 .family-2{
   font-family: 'Lato', sans-serif;
 }
+.logo{
+  width: 1.5rem;
+}
 .brand-name{
 font-style: normal;
 font-weight: 700;
-font-size: 2.25rem;
-line-height: 3.4rem;
+font-size: 1.125rem;
+line-height: 1.69rem;
 }
 .brand-message{
   font-style: normal;
 font-weight: 400;
-font-size: 1.1rem;
-line-height: 2.25rem;
+font-size: 0.875rem;
+line-height: 1.5rem;
 }
+
+.header-span{
+color: #006B38;
+}
+/* this field is causing an overlay */
 
 .input-field{
-  width: 18.9rem;
-  height: 2.75rem;
+  width: 9.5rem;
+  height: 1.75rem;
   background: #E0E0E0;
   border-radius: 3.88827px;
-  font-size: 0.75rem;
-  line-height: 0.875rem;
+  font-size: 0.4rem;
+  line-height: 0.5rem;
 }
 
+#main-btn{
+  width: 6.2rem;
+height: 1.75rem;
+background: #006B38;
+border-radius: 2.10415px;
+font-size: 0.4rem;
+line-height: 0.5rem;
+}
+
+
+.section-2-a{
+  background-image: url('../img/section.png');
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  position: relative;
+  margin-top: 5rem;
+}
+
+.text-padding{
+  padding-top: 7rem;
+}
+.ellipse-1{
+  position: absolute;
+  bottom: 36rem;
+  left: 9rem;
+  width: 3rem;
+}
+
+
+.underline{
+  border: 2px solid #006B38;
+  width: 20%;
+}
+/* .lines{
+  max-width: 50%;
+} */
+
+.icon{
+
+}
+.icon-img{
+width: 3rem;
+}
+.icon-header{
+font-weight: 500;
+font-size: 0.875rem;
+line-height: 1.1rem;
+}
+.icon-body{
+  font-weight: normal;
+  font-size: 0.7rem;
+  line-height: 0.8rem;
+  max-width: 13rem;
+}
+.footer-styles{
+  background-color: #263238;
+}
+/* .trouble{
+  border: 1px solid red;
+} */
+@media (min-width: 576px) { 
+  .ellipse-1{
+    position: absolute;
+    bottom: 37rem;
+    left: 14rem;
+    width: 4rem;
+  }
+  .ellipse-4{
+    position: absolute;
+    top: 0;
+    right: 3rem;
+    width: 4rem;
+  }
+
+ }
+
+@media (min-width: 768px) { 
+  .ellipse-1{
+    position: absolute;
+    bottom: 37rem;
+    left: 12rem;
+    width: 5rem;
+  }
+  .icon-img{
+    width: 4rem;
+    }
+
+ }
 
 @media (min-width: 992px) {
   .img-size{
    width: 25rem;
   }
-  
+  .logo{
+    width: 3rem;
+  }
+  .brand-name{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 3.4rem;
+    }
+    .brand-message{
+      font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 2.25rem;
+    }
+    .nav-hero{
+      background-image: url('../img/header.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      top: 0;
+      left: 0;
+      
+    }
+   
+    .input-field{
+      width: 18.9rem;
+      height: 2.75rem;
+      background: #E0E0E0;
+      border-radius: 3.88827px;
+      font-size: 0.75rem;
+      line-height: 0.875rem;
+    }
+    #main-btn{
+      width: 11.3rem;
+  height: 2.75rem;
+background: #006B38;
+border-radius: 3.88827px;
+font-size: 0.75rem;
+line-height: 0.875rem;
+    }
+    .ellipse-1{
+      position: absolute;
+      bottom: 40rem;
+      left: 15rem;
+    }
+    .icon-header{
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      }
+      .icon-img{
+        width: 4rem;
+        }
+        .icon{
+          margin: 0rem 0rem rem 0rem;
+        }
    }
+
+   @media (min-width: 1200px) {
+    .ellipse-1{
+      position: absolute;
+      bottom: 40rem;
+      left: 20rem;
+    }
+    .ellipse-4{
+      position: absolute;
+      top: 0;
+      right: 2rem;
+    }
+    }
