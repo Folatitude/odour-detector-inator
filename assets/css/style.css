@@ -9,7 +9,7 @@ html, body{
 }
 .nav-hero{
   background-image: url('../img/header.png');
-  background-position: 70% 70%;
+  background-position: 58% 70%;
   background-repeat: no-repeat;
   background-size: cover;
   top: 0;
@@ -43,7 +43,7 @@ line-height: 2.25rem;
   font-style: normal;
 font-weight: 400;
 font-size: 0.875rem;
-line-height: 1.5rem;
+line-height: 1.75rem;
 }
 
 .header-span{
@@ -52,7 +52,6 @@ color: #006B38;
 /* this field is causing an overlay */
 
 .input-field{
-  width: 9.5rem;
   height: 1.75rem;
   background: #E0E0E0;
   border-radius: 3.88827px;
@@ -72,28 +71,50 @@ line-height: 0.5rem;
 
 .section-2-a{
   background-image: url('../img/section.png');
-  background-position: 100% 0%;
+  background-position: 8% 0%;
   background-repeat: no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
   position: relative;
+  overflow-x: hidden;
+  width: 100vw;
+  
   /* margin-top: 5rem; */
   /* padding: 1rem 0 6rem 0; */
 }
 
-.text-padding{
-  padding-top: 7rem;
-}
+/* .text-padding{
+  padding-top: 2rem;
+} */
 .ellipse-1{
   position: absolute;
-  bottom: 36rem;
-  left: 9rem;
+  bottom: 63rem;
+  left: 8rem;
   width: 3rem;
+}
+.ellipse-2{
+  position: absolute;
+  top: 15%;
+  right: 99%;
+  width: 3rem;
+}
+.ellipse-3{
+  position: absolute;
+  top: 2%;
+  right: 6%;
+  width: 4rem;
+}
+.ellipse-5{
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  width: 4rem;
 }
 #icon-positioning{
   margin-bottom: 2.5rem;
   /* margin-left: 4rem; */
+  max-width: 90%;
 }
 
 .line-size{
@@ -104,7 +125,7 @@ line-height: 0.5rem;
 
 .underline{
   border-top: 2px solid #006B38;
-  width: 20%;
+  border-width: 5rem;
 }
 /* .lines{
   max-width: 50%;
@@ -143,14 +164,30 @@ font-weight: bold;
 font-size: 40px;
 line-height: 60px
 }
+.copyright{
+  font-style: normal;
+font-weight: 400;
+font-size: 0.7rem;
+line-height: 0.8rem;
+}
+
+.swiper-container {
+	width: 100%;
+}
+
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: fit-content;
+}
 /* .trouble{
   border: 1px solid red;
 } */
 @media (min-width: 576px) { 
   .ellipse-1{
     position: absolute;
-    bottom: 37rem;
-    left: 14rem;
+    bottom: 63rem;
+    left: 13rem;
     width: 4rem;
   }
   .ellipse-4{
@@ -159,25 +196,38 @@ line-height: 60px
     right: 3rem;
     width: 4rem;
   }
+  .ellipse-3{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 3rem;
+  }
+  .ellipse-5{
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    width: 4rem;
+  }
 
  }
 
 @media (min-width: 768px) { 
   .ellipse-1{
     position: absolute;
-    bottom: 37rem;
-    left: 12rem;
+    bottom: 44rem;
+    left: 10rem;
     width: 5rem;
   }
   .icon-img{
     width: 4rem;
     }
     #icon-positioning{
-      margin-bottom: 7.5rem;
+      margin-bottom: 6.5rem;
     }
     .logo{
       width: 3rem;
     }
+
  }
 
 @media (min-width: 992px) {
@@ -190,7 +240,7 @@ line-height: 60px
   .brand-name{
     font-style: normal;
     font-weight: 700;
-    font-size: 2.25rem;
+    font-size: 1.8rem;
     line-height: 3.4rem;
     }
     .brand-message{
@@ -210,7 +260,7 @@ line-height: 60px
     }
    
     .input-field{
-      width: 18.9rem;
+      /* width: 18.9rem; */
       height: 2.75rem;
       background: #E0E0E0;
       border-radius: 3.88827px;
@@ -227,7 +277,7 @@ line-height: 0.875rem;
     }
     .ellipse-1{
       position: absolute;
-      bottom: 40rem;
+      bottom: 46rem;
       left: 15rem;
     }
     .icon-header{
@@ -241,16 +291,34 @@ line-height: 0.875rem;
           margin: 0rem 0rem rem 0rem;
         }
         #icon-positioning{
-          margin-bottom: 7.4rem;
+          margin-bottom: 6.8rem;
         }
-      
+        .copyright{
+          font-size: 1.1rem;
+          line-height: 1.4rem;
+        }
+        #footer-p-width{
+          width: 85%;
+        }
+        .ellipse-2{
+          position: absolute;
+          top: 15%;
+          right: 95%;
+          width: 5rem;
+        }
+        .ellipse-5{
+          position: absolute;
+          top: 90%;
+          left: 10%;
+          width: 5rem;
+        }
    }
 
    @media (min-width: 1200px) {
     .ellipse-1{
       position: absolute;
-      bottom: 40rem;
-      left: 20rem;
+      bottom: 46rem;
+      left: 22rem;
     }
     .ellipse-4{
       position: absolute;
@@ -261,6 +329,18 @@ line-height: 0.875rem;
       margin-bottom: 7rem;
     }
     .logo{
+      width: 5rem;
+    }
+    .ellipse-2{
+      position: absolute;
+      top: 15%;
+      right: 97%;
+      width: 5rem;
+    }
+    .ellipse-5{
+      position: absolute;
+      top: 90%;
+      left: 10%;
       width: 5rem;
     }
    
