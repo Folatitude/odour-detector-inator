@@ -35,9 +35,9 @@ html, body{
 }
 .brand-name{
 font-style: normal;
-font-weight: 700;
-font-size: 1.125rem;
-line-height: 1.69rem;
+font-weight: 500;
+font-size: 1.4rem;
+line-height: 2.25rem;
 }
 .brand-message{
   font-style: normal;
@@ -78,7 +78,8 @@ line-height: 0.5rem;
   top: 0;
   left: 0;
   position: relative;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
+  /* padding: 1rem 0 6rem 0; */
 }
 
 .text-padding{
@@ -90,10 +91,19 @@ line-height: 0.5rem;
   left: 9rem;
   width: 3rem;
 }
+#icon-positioning{
+  margin-bottom: 2.5rem;
+  /* margin-left: 4rem; */
+}
+
+.line-size{
+  max-width: 12rem;
+  max-height: 28rem;
+}
 
 
 .underline{
-  border: 2px solid #006B38;
+  border-top: 2px solid #006B38;
   width: 20%;
 }
 /* .lines{
@@ -119,6 +129,19 @@ line-height: 1.1rem;
 }
 .footer-styles{
   background-color: #263238;
+  position: relative;
+}
+.footer-ellipse{
+  position: absolute;
+  right: 3rem;
+  top: 2rem;
+  width: 8.5rem;
+}
+
+#footer-font{
+font-weight: bold;
+font-size: 40px;
+line-height: 60px
 }
 /* .trouble{
   border: 1px solid red;
@@ -149,7 +172,12 @@ line-height: 1.1rem;
   .icon-img{
     width: 4rem;
     }
-
+    #icon-positioning{
+      margin-bottom: 7.5rem;
+    }
+    .logo{
+      width: 3rem;
+    }
  }
 
 @media (min-width: 992px) {
@@ -212,6 +240,10 @@ line-height: 0.875rem;
         .icon{
           margin: 0rem 0rem rem 0rem;
         }
+        #icon-positioning{
+          margin-bottom: 7.4rem;
+        }
+      
    }
 
    @media (min-width: 1200px) {
@@ -225,4 +257,11 @@ line-height: 0.875rem;
       top: 0;
       right: 2rem;
     }
+    #icon-positioning{
+      margin-bottom: 7rem;
+    }
+    .logo{
+      width: 5rem;
+    }
+   
     }
