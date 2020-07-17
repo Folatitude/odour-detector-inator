@@ -129,10 +129,10 @@ line-height: 1.31rem;
   top: 0;
   left: 0;
   position: relative;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   min-width: 100vw;
   margin-bottom: 4.4rem;
-  min-height: 150vh;
+  min-height: 100vh;
   padding-bottom:4rem;
   
 }
@@ -206,9 +206,6 @@ line-height: 1.31rem;
   max-width: 50%;
 } */
 
-.icon{
-
-}
 .icon-img{
 width: 3rem;
 }
@@ -281,7 +278,7 @@ line-height: 0.8rem;
   }
   .ellipse-5{
     position: absolute;
-    top: 85%;
+    top: 100%;
     left: 10%;
     width: 4rem;
   }
@@ -299,12 +296,24 @@ line-height: 0.8rem;
     width: 4rem;
     }
     #icon-positioning{
-      margin-bottom: 6.5rem;
+      margin-bottom: 3rem;
     }
     .logo{
       width: 3rem;
     }
-
+    
+    .img-size{
+      min-width: 80%;
+     }
+     .input-field{
+      /* width: 19.4rem ; */
+     
+    }
+    
+    #main-btn{
+      width: 10.5rem;
+   
+    }
  }
 
 @media (min-width: 992px) {
@@ -368,7 +377,7 @@ line-height: 0.8rem;
           margin: 0rem 0rem rem 0rem;
         }
         #icon-positioning{
-          margin-bottom: 6.8rem;
+          margin-bottom: 6.2rem;
         }
         .copyright{
           font-size: 1.1rem;

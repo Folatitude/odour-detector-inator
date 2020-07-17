@@ -33,7 +33,6 @@
   
               if (mysqli_query($conn, $sql)) {
           //success
-                  echo "email registration was successful";
           header(('Location: index.php'));
         } else {
           //error
@@ -57,6 +56,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- <link rel="stylesheet" href="path/to/font-awesome.min.css"> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
@@ -76,14 +76,17 @@
         class="img-fluid ellipse-4 animate__shakeX animate__animated animate__delay-3s wow"
       />
       <nav class="navbar navbar-expand-lg pt-4 px-0">
-        <a class="navbar-brand px-5" href="#"
+        <a class="navbar-brand px-5 d-none d-md-block" href="#"
           ><img src="./assets/img/OD.svg" alt="" class="img-fluid logo"
         /></a>
+        <a class="navbar-brand px-5 d-block d-md-none" href="#"
+          ><img src="./assets/img/OD.png" alt="" class="img-fluid"
+        /></a>
       </nav>
-      <div class="row py-0 px-5">
+      <div class="row py-0 px-5  px-md-3 px-lg-5">
       <ion-icon name="chevron-up-outline " class= "scroll-size"><img src="./assets/img/scroll.svg" alt=""></ion-icon>
         <div
-          class="col-12 col-md-6 py-3 pt-md-5 my-md-1 order-2 order-md-1 px-0 px-md-3"
+          class="col-12 col-md-7 col-lg-6 py-3 pt-md-5 my-md-1 order-2 order-md-1 px-0 px-md-3"
         >
           <h1
             class="brand-name text-white family-1 text-center text-md-left mb-0"
@@ -116,7 +119,7 @@
                   placeholder="Email address..."
                 />
               </div>
-              <div class="col-12 col-md-4 px-0 py-0 text-center text-md-left">
+              <div class="col-12 col-md-4 px-0 py-2 py-lg-0 text-center text-md-left">
                 <button
                   type="submit"
                   name="submit"
@@ -128,10 +131,11 @@
                 
               </div>
             </div>
+          
             <div class="text-danger"><?php echo $errors['email']; ?></div>
           </form>
         </div>
-        <div class="col-12 col-md-6 mr-0 pr-0 order-1 order-md-2 text-right">
+        <div class="col-12 col-md-5 col-lg-6 mr-0 pr-0 order-1 order-md-2 text-right">
           <img
             src="./assets/img/Humans.svg"
             alt=""
@@ -145,24 +149,24 @@
         <img
           src="./assets/img/Ellipse 1.png"
           alt=""
-          class="img-fluid ellipse-1 animate__rubberBand animate__animated wow animate__slower"
+          class="img-fluid ellipse-1 animate__rubberBand animate__animated wow animate__slower animate__infinite"
         />
         <img
           src="./assets/img/Ellipse 1.png"
           alt=""
-          class="img-fluid ellipse-2 d-none d-md-block animate__shakeX animate__animated wow"
+          class="img-fluid ellipse-2 d-none d-md-block animate__shakeX animate__animated wow animate__infinite"
         />
         <img
           src="./assets/img/Ellipse 3.png"
           alt=""
-          class="img-fluid ellipse-3 animate__wobble animate__animated wow animate__slower"
+          class="img-fluid ellipse-3 animate__wobble animate__animated wow animate__slower animate__infinite"
         />
         <img
           src="./assets/img/Ellipse 5.svg"
           alt=""
-          class="img-fluid ellipse-5 animate__heartBeat animate__animated wow animate__slower"
+          class="img-fluid ellipse-5 animate__heartBeat animate__animated wow animate__slower animate__infinite"
         />
-        <h1 class="brand-name text-white text-center family-1 pt-5 mb-0">
+        <h1 class="brand-name text-white text-center family-1 pt-5 mb-0 mt-lg-5 mt-xl-5">
           App Features Include
         </h1>
         <div class="underline mt-0 mx-auto"></div>
@@ -171,12 +175,12 @@
             <img
               src="./assets/img/phone1-small.svg"
               alt=""
-              class="img-fluid d-inline-block d-md-none"
+              class="img-fluid d-inline-block d-md-none animate__heartBeat animate__animated wow animate__slower"
             />
             <img
               src="./assets/img/Phone1.svg"
               alt=""
-              class="img-fluid d-none d-md-inline-block"
+              class="img-fluid d-none d-md-inline-block animate__heartBeat animate__animated wow animate__slower "
             />
           </div>
           <img
@@ -186,7 +190,7 @@
           />
         
           <div
-            class="col-12 col-md-4 text-md-left px-0 pb-md-3 offset-2 offset-sm-3 offset-md-0"
+            class="col-12 col-md-4 text-md-left px-0 pb-md-3 offset-3 offset-sm-3 offset-md-0"
           >
             <div class="icon d-flex" id="icon-positioning">
               <img
@@ -213,7 +217,7 @@
               />
               <div class="text d-inline px-3">
                 <h4 class="icon-header header-span family-2">Threat Notification</h4>
-                <p class="text-white icon-body family-2">
+                <p class="text-white icon-body family-2 w-75">
                 Smart auto notification system to keep user informed. it comes with a vibration and ringing settings.
                 </p>
               </div>
@@ -228,7 +232,7 @@
               <div class="text d-inline px-3">
                 <h4 class="icon-header header-span family-2">Theme Option
 </h4>
-                <p class="text-white icon-body family-2 ">
+                <p class="text-white icon-body family-2 w-75">
                 Application comes with 2 theme option, which includes light and dark mode.
                 </p>
               </div>
@@ -283,7 +287,7 @@
           </div>
         </div>
         <!-- Add Pagination -->
-        <div class="swiper-pagination mt-5 pt-4"></div>
+        <div class="swiper-pagination"></div>
 
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
@@ -295,7 +299,7 @@
         <img
           src="./assets/img/Ellipse 3.png"
           alt=""
-          class="img-fluid d-none d-md-block footer-ellipse"
+          class="img-fluid d-none d-md-block footer-ellipse animate__bounceInUp animate__animated wow"
         />
         <div
           class="col-12 col-md-5 order-3 order-md-1 text-center pt-md-5 pl-md-5 animate__pulse animate__animated wow animate__slower"
@@ -326,25 +330,26 @@
                   placeholder="Email address..."
                 />
               </div>
-              <div class="text-danger"><?php echo $errors['email']; ?></div>
+              
               <div class="col-12 col-md-4 px-0 py-0 text-center text-md-left">
                 <button
                   type="submit"
                   name="submit"
                   id="main-btn"
-                  class="btn text-white family-1 d-block d-lg-inline mx-auto"
+                  class="btn text-white family-1 py-2 py-lg-0 d-block d-lg-inline mx-auto"
                 >
                   Join waiting list
                 </button>
               </div>
             </div>
+            <div class="text-danger"><?php echo $errors['email']; ?></div>
           </form>
         </div>
         <div
           class="col-md-1 col-lg-1 col-xl-2 d-none d-md-block order-2 order-md-2 mx-md-0"
         ></div>
         <div
-          class="col-12 col-md-4 order-1 order-md-2 pr-md-5 pt-md-0 pt-lg-5 pt-xl-4 pr-xl-4 pl-md-0 text-left"
+          class="col-12 col-md-4 order-1 order-md-2 pr-md-5 pt-md-0 pt-lg-5 pt-xl-4 pr-xl-4 pl-md-0 text-center text-md-right"
         >
           <img src="./assets/img/footer-img.svg" alt="" class="img-lg-fluid h-100 " />
         </div>
@@ -355,6 +360,7 @@
     </footer>
 
     <script src="./assets/js/jquery.js"></script>
+    <!-- <script src="https://cdn.rawgit.com/jwarby/jquery-awesome-cursor/master/dist/jquery.awesome-cursor.min.js"></script></pre> -->
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/popper.js"></script>
     <script src="./assets/js/wow.min.js"></script>

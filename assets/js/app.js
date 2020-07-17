@@ -51,4 +51,10 @@ var swiper = new Swiper('.swiper-container', {
 new WOW().init();
 const scroll = new SmoothScroll('.navbar a[href*="#"]', {
 		speed: 500
-	});
+  });
+  // $('body')
+  // .awesomeCursor('hand-o-up', {
+  //   color: #006B38,
+  //   size: 24,
+  //   rotate: 45
+  // });
