@@ -247,7 +247,7 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img
-              src="./assets/img/slider1.svg"
+              src="./assets/img/slider1.png"
               alt=""
               class="mx-auto img-fluid"
             />
