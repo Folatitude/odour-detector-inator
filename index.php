@@ -125,9 +125,10 @@
                 >
                   Join waiting list
                 </button>
-                <div class="text-danger"><?php echo $errors['email']; ?></div>
+                
               </div>
             </div>
+            <div class="text-danger"><?php echo $errors['email']; ?></div>
           </form>
         </div>
         <div class="col-12 col-md-6 mr-0 pr-0 order-1 order-md-2 text-right">
@@ -254,28 +255,28 @@
           </div>
           <div class="swiper-slide">
             <img
-              src="./assets/img/slider2.svg"
+              src="./assets/img/slider2.png"
               alt=""
               class="mx-auto img-fluid"
             />
           </div>
           <div class="swiper-slide">
             <img
-              src="./assets/img/slider3.svg"
+              src="./assets/img/slider3.png"
               alt=""
               class="mx-auto img-fluid"
             />
           </div>
           <div class="swiper-slide">
             <img
-              src="./assets/img/slider4.svg"
+              src="./assets/img/slider4.png"
               alt=""
               class="mx-auto img-fluid"
             />
           </div>
           <div class="swiper-slide">
             <img
-              src="./assets/img/slider5.svg"
+              src="./assets/img/slider5.png"
               alt=""
               class="mx-auto img-fluid"
             />
