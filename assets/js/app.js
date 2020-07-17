@@ -1,32 +1,20 @@
+setTimeout(function(){
+  $('.loader-bg').fadeToggle()
+}, 3000);
 $(document).ready(function(){
-  $('#slide .slider').slick({
-    autoplay: true,
-    autoplaySpeed: 2000,
-    dots: true,
-    speed: 2000,
-    centerMode: true,
-  centerPadding: '60px',
-    slidesToShow: 4,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 4
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-    ]
+  $(window).scroll(function(){
+    if($(window).scrollTop() > 300){
+      $('.scroll-size').css({
+        "opacity": "1", "pointer-events": "auto"
+      })
+    } else {
+      $('ion-icon').css({
+        "opacity": "0", "pointer-events": "none"
+      })
+    }
+  });
+  $('ion-icon').click(function(){
+    $('html').animate({scrollTop: 0}, 500);
   });
 });
 // swiperjs
@@ -61,6 +49,6 @@ var swiper = new Swiper('.swiper-container', {
 	},
 });
 new WOW().init();
-const scroll = new SmoothScroll('.navbar-nav a[href*="#"]', {
+const scroll = new SmoothScroll('.navbar a[href*="#"]', {
 		speed: 500
 	});
