@@ -216,8 +216,8 @@ line-height: 1.1rem;
 }
 .icon-body{
   font-weight: normal;
-  font-size: 0.7rem;
-  line-height: 0.8rem;
+  font-size: 0.874rem;
+  line-height: 1.1rem;
   max-width: 59%;
 }
 .footer-styles{
@@ -278,7 +278,7 @@ line-height: 0.8rem;
   }
   .ellipse-5{
     position: absolute;
-    top: 100%;
+    top: 105%;
     left: 10%;
     width: 4rem;
   }
@@ -453,7 +453,13 @@ line-height: 0.8rem;
       right: 2rem;
     }
     #icon-positioning{
-      margin-bottom: 7rem;
+      margin-bottom: 4.5rem;
+    }
+    .special{
+      margin-bottom: 4rem;
+    }
+    .special-2{
+      margin-top: 3rem;
     }
     .logo{
       width: 5rem;

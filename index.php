@@ -192,7 +192,7 @@
           <div
             class="col-12 col-md-4 text-md-left px-0 pb-md-3 offset-3 offset-sm-3 offset-md-0"
           >
-            <div class="icon d-flex" id="icon-positioning">
+            <div class="icon d-flex special">
               <img
                 src="./assets/img/Group2.svg"
                 alt=""
@@ -209,7 +209,7 @@
               </div>
             </div>
 
-            <div class="icon d-flex" id="icon-positioning">
+            <div class="icon d-flex special-2" id="icon-positioning">
               <img
                 src="./assets/img/Group3.svg"
                 alt=""
@@ -302,7 +302,7 @@
           class="img-fluid d-none d-md-block footer-ellipse animate__bounceInUp animate__animated wow"
         />
         <div
-          class="col-12 col-md-5 order-3 order-md-1 text-center pt-md-5 pl-md-5 animate__pulse animate__animated wow animate__slower"
+          class="col-12 col-md- order-3 order-md-1 text-center pt-md-5 pl-md-5 animate__pulse animate__animated wow animate__slower"
         >
           <h3 class="text-white family-1 brand-name text-md-left">
             Be Part Of The First To Know When The App Is Out
