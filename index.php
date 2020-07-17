@@ -119,7 +119,7 @@
                   placeholder="Email address..."
                 />
               </div>
-              <div class="col-12 col-md-4 px-0 py-2 py-lg-0 text-center text-md-left">
+              <div class="col-12 col-md-4 px-0 py-2 py-md-0 py-lg-0 text-center text-md-left">
                 <button
                   type="submit"
                   name="submit"
@@ -336,7 +336,7 @@
                   type="submit"
                   name="submit"
                   id="main-btn"
-                  class="btn text-white family-1 py-2 py-lg-0 d-block d-lg-inline mx-auto"
+                  class="btn text-white family-1 mt-2 mt-md-0 py-lg-0 d-block d-lg-inline mx-auto"
                 >
                   Join waiting list
                 </button>
